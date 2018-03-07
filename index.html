@@ -20,7 +20,9 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Fin 360</a>
+        <a class="navbar-brand" href="#">
+            Fin 360
+        </a>
         <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarSupportedContent" aria-label="Toggle navigation"
             type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
@@ -61,9 +63,9 @@
                         <form class="form-inline col-md-8">
                             <input class="form-control mr-sm-2 col-md-8 no-redondo" type="search" placeholder="Buscar por nombre, tipo y estado" aria-label="Search">
                             <button class="btn btn-outline-primary my-2 my-sm-0 no-redondo" type="submit">Buscar</button>
-                            <button class="btn btn-bd-primary ml-2 no-redondo" type="button" data-toggle="collapse" data-target="#filtros" aria-expanded="false"
+                            <button class="btn btn-secondary ml-2 no-redondo" type="button" data-toggle="collapse" data-target="#filtros" aria-expanded="false"
                                 aria-controls="collapseExample">
-                                Filtros
+                                <i class="fas fa-filter mr-1"></i>Filtros
                             </button>
                         </form>
                         <div class="col-md-12 my-2 collapse" id="filtros">
@@ -97,11 +99,21 @@
                                             <option>2</option>
                                         </select>
                                     </div>
+                                    <div class="form-group mb-2 col">
+                                        <label for="exampleFormControlSelect1">Filtro 5</label>
+                                        <select class="form-control mx-2 form-control-sm col-md-6" id="exampleFormControlSelect1">
+                                            <option>Seleccione un filtro</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-md-12 mb-2">
-                            <button class="btn btn-secondary float-right no-redondo" type="button" data-toggle="modal" data-target="#exampleModal">NUEVA</button>
+                            <button class="btn btn-secondary float-right no-redondo" type="button" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-file-alt mr-1"></i>Nueva</button>
+                            <button class="btn btn-secondary float-right no-redondo mr-2" type="button">
+                                <i class="fas fa-download mr-1"></i>Exportar</button>
                         </div>
                     </div>
                 </div>
@@ -208,6 +220,36 @@
                     </tbody>
                 </table>
             </div>
+            <div class="col-md-12">
+                <nav aria-label="...">
+                    <ul class="pagination justify-content-end pagination-sm">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">
+                                <i class="fas fa-angle-double-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-md-6">
+                <p class="text-muted">
+                    <b>5</b> registros encontrados</p>
+            </div>
         </div>
     </div>
 
@@ -248,7 +290,7 @@
     <footer class="footer">
         <nav class="navbar navbar-light fixed-bottom" style="background-color: #c7dae8;">
             <span class="navbar-text">
-                Navbar text with an inline element
+                Se han encontrado 5 registros en la base de datos.
             </span>
         </nav>
     </footer>
