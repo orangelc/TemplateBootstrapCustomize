@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Custom Styles Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <title>DEV Template - Design Phase</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Fin 360</a>
+        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarSupportedContent" aria-label="Toggle navigation"
+            type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse float-md-right" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CRÉDITO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DISPERSIÓN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COBRANZA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">REPORTES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ADMINISTRACIÓN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <h2>
+                    <b>Solicitudes</b> de Crédito</h2>
+            </div>
+            <div class="col-md-12 sin-rellenos">
+                <div class="container-fluid">
+                    <div class="row">
+                        <form class="form-inline col-md-8">
+                            <input class="form-control mr-sm-2 col-md-8 no-redondo" type="search" placeholder="Buscar por nombre, tipo y estado" aria-label="Search">
+                            <button class="btn btn-outline-primary my-2 my-sm-0 no-redondo" type="submit">Buscar</button>
+                            <button class="btn btn-bd-primary ml-2 no-redondo" type="button" data-toggle="collapse" data-target="#filtros" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Filtros
+                            </button>
+                        </form>
+                        <div class="col-md-12 my-2 collapse" id="filtros">
+                            <div class="card card-body no-redondo">
+                                <form class="form-row d-flex justify-content-start">
+                                    <div class="form-group mb-2 col">
+                                        <label for="exampleFormControlSelect1">Filtro 1</label>
+                                        <select class="form-control mr-2 form-control-sm col-md-6" id="exampleFormControlSelect1">
+                                            <option>Seleccione un filtro</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-2 col">
+                                        <label for="exampleFormControlSelect1">Filtro 2</label>
+                                        <select class="form-control mr-2 form-control-sm col-md-6" id="exampleFormControlSelect1">
+                                            <option>Seleccione un filtro</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-2 col">
+                                        <label for="exampleFormControlSelect1">Filtro 3</label>
+                                        <select class="form-control mr-2 form-control-sm col-md-6" id="exampleFormControlSelect1">
+                                            <option>Seleccione un filtro</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-2 col">
+                                        <label for="exampleFormControlSelect1">Filtro 4</label>
+                                        <select class="form-control mx-2 form-control-sm col-md-6" id="exampleFormControlSelect1">
+                                            <option>Seleccione un filtro</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <button class="btn btn-secondary float-right no-redondo" type="button" data-toggle="modal" data-target="#exampleModal">NUEVA</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 table-responsive mt-1">
+                <table class="table table-sm table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu no-redondo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Editar</a>
+                                        <a class="dropdown-item" href="#">Eliminar</a>
+                                        <a class="dropdown-item" href="#">Más...</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu no-redondo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Editar</a>
+                                        <a class="dropdown-item" href="#">Eliminar</a>
+                                        <a class="dropdown-item" href="#">Más...</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu no-redondo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Editar</a>
+                                        <a class="dropdown-item" href="#">Eliminar</a>
+                                        <a class="dropdown-item" href="#">Más...</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu no-redondo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Editar</a>
+                                        <a class="dropdown-item" href="#">Eliminar</a>
+                                        <a class="dropdown-item" href="#">Más...</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu no-redondo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Editar</a>
+                                        <a class="dropdown-item" href="#">Eliminar</a>
+                                        <a class="dropdown-item" href="#">Más...</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-backdrop="false">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SOLICITUD NUEVA</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <form class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Nombre del prestatario</label>
+                                    <input type="text" class="form-control no-redondo" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Edad</label>
+                                    <input type="text" class="form-control no-redondo" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary no-redondo" data-dismiss="modal">CERRAR</button>
+                    <button type="submit" class="btn btn-primary no-redondo">GUARDAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <footer class="footer">
+        <nav class="navbar navbar-light fixed-bottom" style="background-color: #c7dae8;">
+            <span class="navbar-text">
+                Navbar text with an inline element
+            </span>
+        </nav>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
